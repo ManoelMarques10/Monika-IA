@@ -2,6 +2,8 @@
 
 Um chat interativo com a Monika do Doki Doki Literature Club usando IA local.
 
+![Print do jogo](Print.png)
+
 ## Requisitos
 
 - [Ollama](https://ollama.ai/) instalado no seu computador
