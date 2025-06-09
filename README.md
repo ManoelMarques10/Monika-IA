@@ -66,15 +66,15 @@ Se algo não funcionar como esperado:
 - Este projeto usa o modelo **Mistral** rodando **localmente**, sem necessidade de internet após a instalação inicial
 - Nenhuma informação é enviada para servidores externos — total privacidade
 - O desempenho e velocidade das respostas dependem do seu hardware
-- A Monika responde com base em palavras-chave e contexto local — personalize seu `JavaScript` para expandir os diálogos!
+- A Monika muda suas expressões e sprites com base em palavras-chave detectadas no texto, para criar uma experiência visual mais envolvente
 
 ---
 
 ## 💡 Dica Extra
 
-Você pode editar o script para adicionar mais categorias de diálogo, personalizar a personalidade da Monika ou até integrar com outros modelos suportados pelo Ollama, como LLaMA ou Gemma.
+Você pode editar o script e fazer qualquer modificação a vontade, personalizar a personalidade da Monika ou até integrar com outros modelos suportados pelo Ollama, como LLaMA ou Gemma.
 
 ---
 
-**Projeto feito com 💖 por [@ManoelMarques10](https://github.com/ManoelMarques10)**  
+**Projeto feito por [@ManoelMarques10](https://github.com/ManoelMarques10)**  
 🧠 Powered by [Ollama](https://ollama.ai) + IA local
