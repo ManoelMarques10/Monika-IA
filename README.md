@@ -1,6 +1,8 @@
-# Mon-ika Chat
+# Monika Chat
 
 Um chat interativo com a Monika do Doki Doki Literature Club usando IA local.
+
+![Print do jogo](Print.png)
 
 ## Requisitos
 
