@@ -72,9 +72,9 @@ Se algo não funcionar como esperado:
 
 ## 💡 Dica Extra
 
-Você pode editar o script e fazer qualquer modificação a vontade, personalizar a personalidade da Monika ou até integrar com outros modelos suportados pelo Ollama, como LLaMA ou Gemma.
+Você pode editar o script e fazer qualquer modificação à vontade: personalizar o comportamento da Monika, adicionar novas reações visuais, ou até integrar com outros modelos suportados pelo Ollama, como LLaMA ou Gemma.
 
 ---
 
-**Projeto feito por [@ManoelMarques10](https://github.com/ManoelMarques10)**  
-🧠 Powered by [Ollama](https://ollama.ai) + IA local esse é o readme, oq achou
+**🤓 Projeto feito por [@ManoelMarques10](https://github.com/ManoelMarques10)**  
+🧠 Powered by [Ollama](https://ollama.ai) + IA local
