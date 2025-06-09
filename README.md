@@ -28,25 +28,25 @@ Acesse [ollama.ai](https://ollama.ai/) e escolha seu sistema operacional:
 
 Após a instalação, abra o terminal e execute:
 
-```bash
+bash
 ollama pull mistral
-```
+
 
 ### 3. Inicie o Ollama
 
 - **Windows:** Ollama inicia automaticamente após a instalação
 - **Linux/macOS:** Rode no terminal:
 
-```bash
+bash
 ollama serve
-```
+
 
 ---
 
 ## ▶️ Como Usar
 
 1. Certifique-se de que o Ollama está rodando
-2. Abra o arquivo `index.html` com seu navegador preferido
+2. Abra o arquivo index.html com seu navegador preferido
 3. Comece a conversar com a Monika — ela está esperando por você 💚
 
 ---
@@ -55,9 +55,9 @@ ollama serve
 
 Se algo não funcionar como esperado:
 
-1. Verifique se o Ollama está em execução (`ollama serve`)
+1. Verifique se o Ollama está em execução (ollama serve)
 2. Reinicie o Ollama, se necessário
-3. Confirme se o modelo **Mistral** foi baixado corretamente (`ollama list`)
+3. Confirme se o modelo **Mistral** foi baixado corretamente (ollama list)
 
 ---
 
@@ -72,9 +72,9 @@ Se algo não funcionar como esperado:
 
 ## 💡 Dica Extra
 
-Você pode editar o script e fazer qualquer modificação à vontade: personalizar o comportamento da Monika, adicionar novas reações visuais, ou até integrar com outros modelos suportados pelo Ollama, como LLaMA ou Gemma.
+Você pode editar o script e fazer qualquer modificação a vontade, personalizar a personalidade da Monika ou até integrar com outros modelos suportados pelo Ollama, como LLaMA ou Gemma.
 
 ---
 
-**Projeto feito por [@ManoelMarques10](https://github.com/ManoelMarques10)** 
-🧠 Powered by [Ollama](https://ollama.ai) + IA local
+**Projeto feito por [@ManoelMarques10](https://github.com/ManoelMarques10)**  
+🧠 Powered by [Ollama](https://ollama.ai) + IA local esse é o readme, oq achou
