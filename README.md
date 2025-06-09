@@ -1,46 +1,80 @@
-# Monika Chat
+# 💬 Monika Chat
 
-Um chat interativo com a Monika do Doki Doki Literature Club usando IA local.
+Um chat interativo com a Monika do *Doki Doki Literature Club*, usando Inteligência Artificial local para criar uma experiência imersiva e personalizada.
 
 ![Print do jogo](imgs/Print.png)
 
-## Requisitos
+---
 
-- [Ollama](https://ollama.ai/) instalado no seu computador
+## 🖥️ Requisitos
+
+- [Ollama](https://ollama.ai/) instalado em seu computador
 - Navegador web moderno (Chrome, Firefox, Edge, etc.)
+- Modelo **Mistral** baixado no Ollama
 
-## Instalação
+---
 
-1. Primeiro, instale o Ollama:
-   - Windows: Baixe o instalador em [ollama.ai](https://ollama.ai/)
-   - Linux: Siga as instruções em [ollama.ai](https://ollama.ai/)
-   - Mac: Baixe o instalador em [ollama.ai](https://ollama.ai/)
+## ⚙️ Instalação
 
-2. Após instalar o Ollama, abra o terminal e execute:
-   ```bash
-   ollama pull mistral
-   ```
+### 1. Instale o Ollama
 
-3. Inicie o Ollama:
-   - Windows: O Ollama deve iniciar automaticamente após a instalação
-   - Linux/Mac: Execute `ollama serve` no terminal
+Acesse [ollama.ai](https://ollama.ai/) e escolha seu sistema operacional:
 
-## Como Usar
+- **Windows:** Baixe e execute o instalador
+- **Linux:** Siga as instruções no site
+- **macOS:** Baixe e execute o instalador
 
-1. Abra o arquivo `index.html` no seu navegador
-2. Certifique-se de que o Ollama está rodando
-3. Comece a conversar com a Monika!
+### 2. Baixe o modelo Mistral
 
-## Solução de Problemas
+Após a instalação, abra o terminal e execute:
 
-Se você encontrar algum erro:
+```bash
+ollama pull mistral
+```
 
-1. Verifique se o Ollama está rodando
-2. Tente reiniciar o Ollama
-3. Verifique se o modelo Mistral foi baixado corretamente
+### 3. Inicie o Ollama
 
-## Notas
+- **Windows:** Ollama inicia automaticamente após a instalação
+- **Linux/macOS:** Rode no terminal:
 
-- O chat usa o modelo Mistral do Ollama, que é gratuito e roda localmente no seu computador
-- Não é necessário internet após a instalação inicial do modelo
-- As respostas podem variar dependendo do seu hardware
+```bash
+ollama serve
+```
+
+---
+
+## ▶️ Como Usar
+
+1. Certifique-se de que o Ollama está rodando
+2. Abra o arquivo `index.html` com seu navegador preferido
+3. Comece a conversar com a Monika — ela está esperando por você 💚
+
+---
+
+## 🛠️ Solução de Problemas
+
+Se algo não funcionar como esperado:
+
+1. Verifique se o Ollama está em execução (`ollama serve`)
+2. Reinicie o Ollama, se necessário
+3. Confirme se o modelo **Mistral** foi baixado corretamente (`ollama list`)
+
+---
+
+## 📝 Notas
+
+- Este projeto usa o modelo **Mistral** rodando **localmente**, sem necessidade de internet após a instalação inicial
+- Nenhuma informação é enviada para servidores externos — total privacidade
+- O desempenho e velocidade das respostas dependem do seu hardware
+- A Monika responde com base em palavras-chave e contexto local — personalize seu `JavaScript` para expandir os diálogos!
+
+---
+
+## 💡 Dica Extra
+
+Você pode editar o script para adicionar mais categorias de diálogo, personalizar a personalidade da Monika ou até integrar com outros modelos suportados pelo Ollama, como LLaMA ou Gemma.
+
+---
+
+**Projeto feito com 💖 por [@ManoelMarques10](https://github.com/ManoelMarques10)**  
+🧠 Powered by [Ollama](https://ollama.ai) + IA local
