@@ -21,7 +21,6 @@ const audioConfig = {
     bgMusicVolume: 0.5,
     typingVolume: 0.2,
     volumeStep: 0.1,
-    fadeDuration: 1000 // duração da transição de volume em ms
 };
 
 // Função que simula digitação com efeito sonoro
