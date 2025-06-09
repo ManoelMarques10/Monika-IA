@@ -76,5 +76,5 @@ Você pode editar o script e fazer qualquer modificação à vontade: personaliz
 
 ---
 
-**Projeto feito por [@ManoelMarques10](https://github.com/ManoelMarques10)** 🤓
+**🤓 Projeto feito por [@ManoelMarques10](https://github.com/ManoelMarques10)** 
 🧠 Powered by [Ollama](https://ollama.ai) + IA local
