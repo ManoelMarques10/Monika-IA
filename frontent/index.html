@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon-ika</title>
+    <!-- Links para arquivos de estilo e favicon -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Container principal que organiza todos os elementos -->
+    <div class="container">
+        <!-- Imagem da Monika que muda de acordo com o estado emocional -->
+        <img id='monika' src="../imgs/normal.webp" alt="Monika.png">
+        <div>
+            <!-- Área de texto para o usuário digitar mensagens -->
+            <textarea id='texto' placeholder="Fale com a Monika... (Pressione Enter para enviar)"></textarea>
+        </div>
+        <div>
+            <!-- Botão para enviar mensagens -->
+            <button id='botao' onmouseenter="entrar2(this)" onmouseleave="sair2(this)" onclick="clicou()">Enviar</button>
+        </div>
+        <!-- Elementos de áudio -->
+        <!-- Música de fundo do Doki Doki Literature Club -->
+        <audio id="bgMusic" loop>
+            <source src="../audios/Doki Doki Literature Club! OST - Doki Doki Literature Club! (Main Theme).mp3" type="audio/mpeg">
+        </audio>
+        <!-- Som de digitação para feedback sonoro -->
+        <audio id="typingSound" src="../audios/Writing.mp3" loop></audio>
+        <!-- Controles de música -->
+        <div id="musicadefundo">
+            <div class="volume-controls">
+                <!-- Display do volume -->
+                <span id="volumeDisplay" class="volume-display">Volume: 50%</span>
+                <div class="volume-buttons-row">
+                    <button id="aumentarmsc" class="volume-btn" onmouseenter="entrar(this)" onmouseleave="sair(this)" onclick="aumentar()">+</button>
+                    <button id="diminuirmsc" class="volume-btn" onmouseenter="entrar(this)" onmouseleave="sair(this)" onclick="diminuir()">-</button>
+                </div>
+                <button id="pausarmsc" class="volume-btn" onclick="pausar()" onmouseenter="entrar(this)" onmouseleave="sair(this)">Pausar Música</button>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts JavaScript -->
+    <script src="ai-service.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

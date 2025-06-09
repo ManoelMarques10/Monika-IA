@@ -1,0 +1,160 @@
+/* Estilo do corpo da página com imagem de fundo do Doki Doki Literature Club */
+body {
+    background-image: url('../imgs/Club.webp');
+    min-height: 100vh;
+    margin: 0;
+    position: relative; 
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Impede barras de rolagem */
+}
+
+/* Container principal que centraliza todos os elementos */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+/* Estilo da imagem da Monika */
+img#monika {
+    width: 60vw;
+    max-width: 100vh;
+    height: auto;
+    margin-bottom:0vh;   
+    transition: transform 0.3s ease;
+    max-height: 90vh; /* Garante que não ultrapasse a tela */
+    object-fit: contain;
+    display: block;
+}
+
+img#monika:hover {
+    transform: scale(1.02);
+    /* Garante que o scale não cause overflow */
+}
+
+/* Área de texto para digitação */
+textarea#texto {
+    background-color: rgb(255, 209, 247);
+    position: absolute; 
+    bottom: 1%; 
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 70vh;
+    height: 11vh; 
+    resize: none;
+    border: 2px solid #8a2be2;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+textarea#texto:focus {
+    outline: none;
+    border-color: #0000ff;
+}
+
+/* Botão de enviar mensagem */
+button#botao {
+    background-color: #0088ff;
+    position: absolute; 
+    bottom: 15.5vh; 
+    left:50%;
+    transform: translateX(-50%);
+    color: #fff;
+    border-radius: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#botao:hover {
+    background-color: #0066cc;
+}
+
+/* Elemento de áudio oculto para música de fundo */
+#bgMusic {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Container dos controles de volume (display + botões) */
+.volume-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+    width: 140px;
+}
+
+/* Display do volume centralizado acima dos botões, mesma largura dos botões */
+.volume-display {
+    background-color: rgba(138, 43, 226, 0.7);
+    border-radius: 8px;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px 0;
+    margin-bottom: 6px;
+    text-align: center;
+    text-shadow: 1.5px 1.5px 1.5px rgb(0, 0, 0);
+    box-shadow: 0.75px 0.75px 0.75px 0.75px rgb(0, 0, 0, 0.1);
+    width: 100%;
+    min-width: 120px;
+    max-width: 100%;
+    display: block;
+}
+
+/* Linha dos botões + e - */
+.volume-buttons-row {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+/* Botões de volume e pausar, todos com a mesma largura */
+.volume-btn {
+    background-color: #8a2be2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 0;
+    cursor: pointer;
+    box-shadow: 0.75px 0.75px 0.75px 0.75px rgb(0, 0, 0);
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    width: 48%;
+    min-width: 50px;
+    max-width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+.volume-buttons-row .volume-btn {
+    width: 48%;
+}
+
+#pausarmsc.volume-btn {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    display: block;
+}
+
+.volume-btn:hover {
+    background-color: rgb(139, 33, 61);
+}
+
+
