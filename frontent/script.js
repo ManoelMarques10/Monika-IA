@@ -122,29 +122,33 @@ function pausar() {
 // Função para aumentar o volume com limite
 function aumentar() {
     const bgMusic = document.getElementById('bgMusic');
-    if (bgMusic.volume < 1) {
-        const novoVolume = Math.min(1, bgMusic.volume + audioConfig.volumeStep);
-        bgMusic.volume = novoVolume;
-        updateVolumeDisplay();
-        
-        if (novoVolume >= 1) {
-            alert('Volume Máximo!');
-        }
+    const epsilon = 0.001; // margem para imprecisões
+
+    // Se o volume já estiver no máximo ou quase, alerta e não aumenta
+    if (bgMusic.volume >= 1 - epsilon) {
+        alert('Volume Máximo!');
+        return;
     }
+
+    const novoVolume = Math.min(1, bgMusic.volume + audioConfig.volumeStep);
+    bgMusic.volume = novoVolume;
+    updateVolumeDisplay();
 }
 
 // Função para diminuir o volume com limite
 function diminuir() {
     const bgMusic = document.getElementById('bgMusic');
-    if (bgMusic.volume > 0) {
-        const novoVolume = Math.max(0, bgMusic.volume - audioConfig.volumeStep);
-        bgMusic.volume = novoVolume;
-        updateVolumeDisplay();
-        
-        if (novoVolume <= 0) {
-            alert('Volume Mínimo!');
-        }
+    const epsilon = 0.001; // margem para imprecisões
+
+    // Se o volume já estiver em zero ou praticamente zero, avisa e não tenta diminuir
+    if (bgMusic.volume <= epsilon) {
+        alert('Volume Mínimo!');
+        return;
     }
+
+    const novoVolume = Math.max(0, bgMusic.volume - audioConfig.volumeStep);
+    bgMusic.volume = novoVolume;
+    updateVolumeDisplay();
 }
 
 // Função para atualizar o display de volume
